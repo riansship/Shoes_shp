@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url("backg.webp");
+    background-color: blue;
     /*color: #fff;*/
     background-position: center;
     height: 160px;
