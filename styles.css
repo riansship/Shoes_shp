@@ -1,0 +1,121 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0c0c0;
+}
+
+header {
+    background-image: url("backg.webp");
+    /*color: #fff;*/
+    background-position: center;
+    height: 160px;
+    background-size: 300px;
+    margin: 0 0 25px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
+}
+#pr {
+    color: red;
+    position: center;
+    margin: 0;
+}
+nav {
+    display: flex;
+    animation-name: tr;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    margin: 0;
+}
+@keyframes tr {
+    from{transform: translateX(-100%)}
+}
+#ac {
+    color: grey;
+    font-size: 2.1em;
+    margin: 0;
+    text-align: center;
+}
+.im {
+    width: 65px;
+    height: 120px;
+    box-shadow: 2.8px 2.5px 2.2px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+h1 {
+    text-shadow: 0 -0.4px 2.5px black;
+    margin: 0;
+    font-size: 2em;
+
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    color: purple;
+    text-shadow: 0 -0.1px 1.1px black;
+    margin: 0;
+}
+.brand-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer {
+    background-color: #F2E2C3;
+    height: 80px;
+}
+article {
+    flex-basis: 22%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 2.6px rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #c0c0c0;
+    transition: transform 0.2s ease-in-out;
+}
+
+article:hover {
+    transform: translateY(-10px);
+}
+h5{
+    text-align: center;
+}
+
+img {
+    width: 360px;
+    height: 200px;
+    display: block;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 0;
+    background-color: #F2E2C3;
+}
+div {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+a:hover h2 {
+    color: #3498db;
+}
+
+/* Adaptabilité pour petits écrans */
+@media (max-width: 768px) {
+    .brand-gallery {
+        flex-direction: column;
+    }
+
+    article {
+        flex-basis: 80%;
+    }
+}
